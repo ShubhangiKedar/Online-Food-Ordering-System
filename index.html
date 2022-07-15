@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="styles.css" rel="stylesheet" />
+
+    <script language="Javascript" type="text/javascript">   
+      	
+	Pictures = new Array( "./img/Capture15.jpeg","./img/Capture16.jpeg","./img/Capture17.jpeg")  
+   	CurrentPicture = 0      
+
+function RunSlideShow(ForwardBack) 
+   {         
+         if (ForwardBack > 0) 
+         {
+                   CurrentPicture = 2  
+          }           
+         else if (ForwardBack < 0) 
+         {
+                     CurrentPicture = 0
+         }          
+        else
+        {
+  	CurrentPicture = 1
+         }
+  	document.PictureDisplay.src=Pictures[CurrentPicture]
+  }    
+
+</script> 
+</head>
+	<div class="box">
+	<p align="center">
+	<p align="center"><h1 class="h"><font face="appleberry" size="80"> Welcome To Olive</font> </h1>
+
+	<nav class="navigation container">
+	<ul class="list-non-bullet nav-pills">
+            		<li class="list-item-inline">
+                		<a class="link link-active" href="index.html">Home</a>
+            		</li>
+            
+		<li class="list-item-inline">
+                		<a class="link " href="gallery.html">Gallery</a>
+            		</li>
+
+           		<li class="list-item-inline">
+           	                   <a class="link" href="chef.html">Chef Team</a>
+           	                   </li>
+
+            		<li class="list-item-inline">
+               		<a class="link" href="menu.html">Special Menu</a>
+            		</li>
+
+            		<li class="list-item-inline">
+                		<a class="link" href="form.html">Order form</a>
+            		</li>
+
+            		<li class="list-item-inline">
+                		<a class="link" href="aboutpage.html">About Us</a>
+           		 </li> 
+	</ul>
+	<br><hr>
+	</nav>	
+<br>
+<div class="box"> 
+</div>
+<center>
+	<img src="img/Capture16.jpeg"  name="PictureDisplay" width="500" height="400"/>
+</p>   
+<center>   
+        <table border="0">     
+ 	<tr>      
+	<td align="center">            
+		<input type="button" value="Forward" onclick="RunSlideShow(1)">        
+    		<input type="button" value="Back" onclick="RunSlideShow(-1)">        
+	</td>      
+	</tr>   
+       </table>   
+</center>
+
+<body style="background-image: url(./img/home.jpg);">
+
+</body>
+</html>

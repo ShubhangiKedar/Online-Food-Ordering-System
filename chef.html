@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Team</title>
+    <link href="styles.css" rel="stylesheet" />
+	
+
+    <script>   
+  
+  function BreakInDetected()
+  {   
+      	alert('Security Violation')      
+      	return false     
+  }    
+ 
+ function NetscapeBrowser(e)
+{       
+    if (document.layers|| document.getElementById&&!document.all)
+    {
+            if (e.which==2||e.which==3)
+           {       
+               BreakInDetected()          
+               return false       
+          }       
+     }    
+ }
+ 
+function InternetExploreBrowser()
+{      
+      if (event.button==2)
+      {        
+   	BreakInDetected()       
+    	return false   
+       } 
+}    
+      if (document.layers)
+      {
+       	document.captureEvents(Event.MOUSEDOWN)
+       	document.onmousedown=NetscapeBrowser()
+      }
+     else if (document.all&&!document.getElementById)
+     {
+                  document.onmousedown=InternetExploreBrowser()
+      }  
+ document.oncontextmenu=new Function( "BreakInDetected();return false")     
+
+</script> 
+</head> 
+
+<body style="background-image: url(./img/home.jpg);"> 
+<center>
+<font face="appleberry" size="80" color="white">Chef Team</center></font>
+
+<nav class="navigation container">
+<ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="index.html">Home</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link " href="gallery.html">Gallery</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link link-active" href="chef.html">Chef Team</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="menu.html">Special Menu</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="form.html">Order form</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="aboutpage.html">About Us</a>
+            </li> 
+
+       </ul>
+  <br><hr>
+</nav>
+
+<br>
+<table width="100%" border=0>     
+      <tbody>         
+	<tr vAlign=top>           
+	<td width=50>              
+	<a>              
+	          <img height=200 src="./img/a.jpg" width="200" border="2" '">
+	</a>          
+	</td>          
+
+	<td>               
+	          <img height=1 src="" width=10>         
+ 	</td>          
+
+	<td>             
+	<a>                
+	          <cTypeface:Bold><h1>
+	          <font color="white"><u>Ms.Pankaj</h1></u></b>             
+	</a>             
+	</font>
+	          <font face="Comic Sans MS" size=-1 color="white"><h2>New Baker  </h2>                    
+	</td>         
+	</tr>      
+
+	<tr vAlign=top>           
+	<td width=50>              
+	<a>              
+	           <img height=200 src="./img/b.jpg" width="200" border="2'">
+	</a>          
+	</td>  
+        
+	<td>               
+	           <img height=1 src="" width=10>         
+	 </td>          
+	
+	<td>             
+	<a>                
+	           <cTypeface:Bold><h1>
+	           <font color="white"><u>Sanjeev Kapoor</h1></u></b>             
+	</a>             
+	</font>
+
+	             <font face="Comic Sans MS" size=-1  color="white"><h2>Main Chef   </h2>                 
+	</td>         
+	</tr>      
+
+	<tr vAlign=top>           
+	<td width=50>              
+	<a>              
+	               <img height=200 src="./img/c.jpg" width="200" border="2'">
+	</a>          
+	</td>          
+
+	<td>               
+	            <img height=1 src="" width=10>         
+ 	</td>          
+
+	<td>             
+	<a>                
+	             <cTypeface:Bold ><h1>
+	             <font color="white"><u>Vikas Khanna</h1></u></b>             
+
+	</a>             
+	</font>
+	                  <font face="Comic Sans MS" size=-1  color="white"><h2>Pizza Specialized<h2>                    
+	</td>         
+	</tr>      
+
+</tbody>   
+</table> 
+</body> 
+</html>

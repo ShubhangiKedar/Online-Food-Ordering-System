@@ -1,0 +1,75 @@
+
+.h{
+
+	color:white;
+	text-shadow:3px 2px blue;
+	text-align:center;
+     }
+
+.text{
+
+	color:white;
+	text-shadow:3px 2px red;
+     }
+
+/** container **/
+.container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.container-center {
+    max-width: 400px;
+    margin: auto;
+}
+
+/** links **/
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+text-align: right;
+}
+
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+
+.navigation {
+
+    color: white;
+    padding: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+text-align: right;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+text-align: right;
+}
+
+

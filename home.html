@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>  
+    <link href="styles.css" rel="stylesheet" /> 
+	
+    <style>
+
+    p
+    {
+        font-family:Arial;
+    }
+
+    </style>
+
+   <script language="Javascript" type="text/javascript">   
+
+   Banners = new Array("./img/Capture24.jpeg","./img/Capture26.jpeg","./img/Capture27.jpeg")    
+   CurrentBanner = 0
+     function DisplayBanners() 
+    {  
+            if (document.images) 
+          { 
+               CurrentBanner++
+               if (CurrentBanner == Banners.length)
+                {
+                     CurrentBanner = 0
+                } 
+              document.RotateBanner.src= Banners[CurrentBanner]  
+              setTimeout("DisplayBanners()",1000)
+          }
+    }      
+      	
+
+   </script> 
+</head> 
+<div class="box">
+<center><br>
+	<font color="white" face="appleberry" size="80">Online Food Ordering System </font> </h1>
+	</center><br>
+
+	<nav class="navigation container">
+	<ul class="list-non-bullet nav-pills">
+        	                    <li class="list-item-inline">
+               		 <a class="link" href="index.html">Home</a>
+            		</li>
+
+            		<li class="list-item-inline">
+                		<a class="link " href="gallery.html">Gallery</a>
+            		</li>
+
+            		<li class="list-item-inline">
+                		<a class="link" href="chef.html">Chef Team</a>
+                                      </li>
+
+            		<li class="list-item-inline">
+                		<a class="link" href="menu.html">Special Menu</a>
+           		 </li>
+
+            		<li class="list-item-inline">
+                		<a class="link" href="form.html">Order form</a>
+            		</li>
+
+            		<li class="list-item-inline">
+                		<a class="link" href="aboutpage.html">About Us</a>
+            		</li> 
+       	</ul><hr>
+	</nav>
+
+<p align="right"> 
+<body style="background-image: url(./img/home.jpg);"> 
+<body onload="DisplayBanners()" >   
+<center>   
+<br> <br> 
+	<img src="./img/Capture24.png" width="700"  height="450" name="RotateBanner" />   
+
+</center>
+
+<div class="box"> 
+</div>
+</body> 
+</html>

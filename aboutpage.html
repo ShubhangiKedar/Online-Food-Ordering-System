@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="styles.css" rel="stylesheet" />
+	
+<script>
+
+var Clock = null
+var MesgDisplayed = false
+var Count = 0
+var Offset = 0
+var Mesg = new Array('THANK YOU FOR ORDERING FOOD !')
+
+function Pause()
+{
+           if(MesgDisplayed)
+           {        
+                    clearTimeout(Clock)
+           }
+           MesgDisplayed = false
+}
+
+function Display()
+{
+        if(Offset < Mesg[Count].length)
+        {
+                    if(Mesg[Count].charAt(Offset)==" ")
+                    {
+	       Offset++
+                    }
+
+          var PMesg = Mesg[Count].substring(0,Offset + 1)
+          window.status = PMesg
+          Offset++
+          Clock = setTimeout("Display()",100)
+          MesgDisplayed = true
+     }
+   else
+    {
+           Offset = 0
+           Count++
+           if(Count == Mesg.length)
+            {
+            	  Count  = 0       
+            }
+        	Clock = setTimeout("Display()",1000)
+       	 MesgDisplayed = true
+            }
+     }
+
+function Start()
+{
+     Pause()
+      Display()
+}
+
+</script>
+</head>
+
+<body onload = "Start()">
+<body style="background-image: url(./img/home.jpg);"> 
+<center>
+<font face="appleberry" size="80" color="white">About Us </font>
+
+<nav class="navigation container">
+<ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="index.html">Home</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link " href="gallery.html">Gallery</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="chef.html">Chef Team</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="menu.html">Special Menu</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="form.html">Order form</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link link-active" href="aboutpage.html">About Us</a>
+            </li> 
+       </ul>
+</nav>				<hr>
+				<font size="5" color="white"><h2>Contact Info.
+					<h4>Phone No: 090-080-0760</h4>
+					<h4>Address :  Olive restaurant and Cafe,Shivajinagar,pune 411016</h4>	
+			
+				<h2 >Open Hours</h2>
+					<p>Sunday <span>10:30 AM - 10:00 PM</span></p>
+					<p>Mon-Fri <span>9:00 AM - 8:00 PM</span></p>
+					<p>Saturday <span>11:30 AM - 10:00 PM</span></p>
+			
+				<h3>Olive </h3>
+				<p>Copyright © Olive restaurant and Cafe
+                
+</body>
+</html>
+
+

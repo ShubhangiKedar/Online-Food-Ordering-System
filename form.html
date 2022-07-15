@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <title> Order Form</title>
+    <style>
+
+	a
+	{
+	    text-decoration:none;
+	}
+
+     </style>
+</head>
+
+<body style="background-image: url(./img/home.jpg);">
+<fieldset>
+<center>
+<font face="Bahnschrift" size="10" color="white">Welcome TO Olive </font><br>
+<font face="Comic Sans MS" size="3" color="white"><i>Every thing you need to know</i></font>
+<br>
+
+<nav class="navigation container">
+<ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="home.html">Home</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link " href="gallery.html">Gallery</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="chef.html">Chef Team</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="menu.html">Special Menu</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link link-active" href="form.html">Order form</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="aboutpage.html">About Us</a>
+            </li> 
+
+       </ul>
+       </nav>
+</center>
+</fieldset>
+
+<br><br>
+
+<form>
+<table border="5" align="center" cellpadding="3">
+	 <tr>
+	<td>
+		<h4><font size="5" color="white">Name</font></center></h4>
+	</td>
+ 	</tr>
+
+	<td>
+		<input type="text" name="name" size="48" onchange="Namevalidation(this.value)">
+	</td>
+
+ 	<tr>
+	<td>
+		<h4><font size="5" color="white">Contact</font></center></h4>
+	</td>
+ 	</tr>
+
+	<td>
+		<input type="text" name="Phone_no" size="48"  onchange="RegExp(Phone_no.value)" >
+	</td>
+ 
+	<tr>
+	<td>
+		<h4><font size="5" color="white">Address</font></center></h4>
+	</td>
+ 	</tr>
+
+	<td>
+		<input type="text" name="name" size="48" >
+	</td>
+
+	<tr>
+	<td>
+		<h4><font size="5" color="white">Email</font></center></h4>
+	</td>
+ 	</tr>
+
+	<td>
+		<input type="text" name="Email" size="48" onchange="RegExpression(this.value)" >
+	</td>
+
+	<tr>
+	<td>
+		<h4><font size="5" color="white">Food</font></center></h4>
+	</td>
+	</tr>
+        		<td width="57%"><select name="mydropdown">
+
+        		<option value="Default">Default</option>
+        		<option value="Dhokala">Dhokala</option>
+        		<option value="Pizza">Pizza</option>
+        		<option value="Burgar">Burgar</option>
+        		<option value="Kheer">Kheer</option>
+        		<option value="Chiense">Chiense</option>
+        		<option value="Gulabjamun">Gulabjamun</option>
+        		<option value="Chhole">Chhole</option>
+        		<option value="South Indian food">South Indian food</option>
+        		<option value="Cake">Cake</option>
+	</select>
+	</td>
+
+	<tr>
+	<td>
+		<h4><font size="5" color="white">Quantity</font></center></h4>
+	</td>
+	</tr>
+        
+	<td width="57%">
+		<select name="mydropdown">
+        		<option value="Default">Default</option>
+        		<option value="Regular">Regular</option>
+        		<option value="Small">Small</option>
+        		<option value="Large">Large</option>
+	</select>
+	</td>
+
+	<tr>
+	<td>
+		<h4><font size="5" color="white">Delivery Time </font></center></h4>
+	</td>
+	</tr>
+        
+	<td width="57%">
+		<select name="mydropdown">
+        		<option value="Default">Default</option>
+        		<option value="8 AM - 10 AM">8 AM - 10 AM</option>
+        		<option value="10 AM - 12 PM">10 AM - 12 PM</option>
+        		<option value="12 PM - 2 PM">12 PM - 2 PM</option>
+        		<option value="2 PM - 4 PM">2 PM - 4 PM</option>     
+        		<option value="4 PM - 6 PM">4 PM - 6 PM</option>
+        		<option value="6 PM - 8 PM">6 PM - 8 PM</option>
+        		<option value="8 PM - 10 PM">8 PM - 10 PM</option>   
+		</select>
+	</td>
+
+
+	<tr>
+	<td>
+		<font size="5" color="white">
+		<h4>Pay</font></center></h4>
+	</td>
+ 	</tr>
+
+	<td>
+		<font  color="white"><input type="radio" name="pay" value="Debit Card" size="48"  >Debit Card
+		<font  color="white"><input type="radio" name="pay" value="Credit Card" size="48"  >Credit Card
+ 		<font  color="white"><input type="radio" name="pay" value="COD" size="48"  >COD
+	</td>
+
+	<tr>
+	<td>
+		<input type="checkbox" name="I agree with terms and conditions" value ="I agree the terms and conditions">
+		<font size="2" color="white">I agree the <font size="2" color="blue"> <u>terms and conditions <u></font>of this website</font></center></h5>
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+		<center>
+		<input type="Submit" name="Submit" value="Submit">
+		<input type="reset"  name="Reset" value="Reset">
+	</td>
+	</tr>
+</center>
+</table>
+</form>
+<br>
+<center>
+<font face="Comic Sans MS" size="6" color="white" id="sign">Hurry up!!!!!!!!!!!</font><br>
+</center>
+</body>
+
+<script>
+
+function Namevalidation(n)
+{
+          nm = /^[A-Za-z]+$/
+          if(nm.test(n))
+          {
+	alert('Submitted Sucessfully')
+          }
+          else
+           {
+	
+	alert('You have entered an invalid Name!')
+           }
+}
+
+function RegExp(name)
+{
+          re = /^\d{10}$/
+          if(re.test(name))
+          {
+	alert('Submitted Sucessfully');
+          }
+          else
+           {
+	alert('You have entered an invalid Phone Number!');
+           }
+}
+
+function RegExpression(name)
+{
+          re = /[\W]/
+          if(re.test(name))
+          {
+	alert('Submitted Sucessfully')
+          }
+          else
+           {
+	
+	alert('You have entered an invalid Email address!')
+           }
+}
+
+
+</script>
+</html>
